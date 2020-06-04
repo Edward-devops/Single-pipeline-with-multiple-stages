@@ -32,7 +32,7 @@ pipeline {
              
             }
         }
-		stage(" Unit Test") {
+		stage("Master") {
             steps {
                 echo "Master code move here..."
             
