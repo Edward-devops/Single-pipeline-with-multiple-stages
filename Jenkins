@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+
+    stages {
+        stage("Build") {
+            steps {
+                echo "Some code compilation here..."
+            }
+        }
+
+        stage(" Unit Test") {
+            steps {
+                echo "Some Unit tests execution here..."
+                echo 1
+            }
+        }
+		stage(" Integration Test") {
+            steps {
+                echo "Some Integration tests execution here..."
+                echo 1
+            }
+        }
+		stage(" Feature Branch") {
+            steps {
+                echo "Some Feature branch code move..."
+                echo 1
+            }
+        }
+		stage(" Develop") {
+            steps {
+                echo "Develop code move here..."
+                echo 1
+            }
+        }
+		stage(" Unit Test") {
+            steps {
+                echo "Master code move here..."
+                echo 1
+            }
+        }
+    }
+}
