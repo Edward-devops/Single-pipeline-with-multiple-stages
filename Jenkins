@@ -2,39 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage("Build") {
+        stage("Develop") {
             steps {
-                echo "Some code compilation here..."
-            }
-        }
-
-        stage(" Unit Test") {
-            steps {
-                echo "Some Unit tests execution here..."
-            
-            }
-        }
-		stage(" Integration Test") {
-            steps {
-                echo "Some Integration tests execution here..."
-            
-            }
-        }
-		stage(" Feature Branch") {
-            steps {
-                echo "Some Feature branch code move..."
-             
-            }
-        }
-		stage(" Develop") {
-            steps {
-                echo "Develop code move here..."
-             
-            }
-        }
-		stage("Master") {
-            steps {
-                echo "Master code move here..."
+                echo "Develop Code move here..."
             
             }
         }
